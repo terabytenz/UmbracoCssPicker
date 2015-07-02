@@ -1,0 +1,55 @@
+.csspicker__icons{
+	margin-left:0;
+	list-style:none
+}
+
+.csspicker__icons > li {
+	float:left;
+	margin:0 5px 5px 0;
+	position:relative;
+	text-align: center;
+}
+
+.csspicker__icon {
+	display:inline-block;
+	vertical-align:middle;
+	position:relative;
+	height:50px;
+	width:50px;
+}
+
+.csspicker__icons small{
+	display: block;
+	width:100%;
+	color:#B3B3B3;
+	font-size: 11px;
+}
+
+.csspicker__no-value {
+	display:none;
+}
+
+.csspicker__remove {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	display: none;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	font-size: 24px;
+	line-height: 36px;
+	color: #F00;
+	text-align: center;
+	text-decoration: none;
+	background: #FFF;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	opacity: .5;
+}
+
+.csspicker__icon:hover .csspicker__remove{
+	display: block;
+	text-decoration: none;
+	color: #F00; 
+}

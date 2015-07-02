@@ -1,0 +1,39 @@
+﻿<div class="umb-panel" ng-controller="Terabyte.Css.Modal">
+	<div class="umb-panel-header">
+		<div class="umb-el-wrap umb-panel-buttons">
+			<div class="form-search">
+				<i class="icon-search"></i>
+				<input type="text"
+					   style="width: 100%"
+					   ng-model="searchTerm"
+					   class="umb-search-field search-query input-block-level"
+					   placeholder="Filter...">
+			</div>
+		</div>
+	</div>
+
+	<div class="umb-panel-body with-footer">
+		<div class="umb-loader" ng-hide="loaded"></div>
+		<div class="alert alert-block" ng-show="error">{{error}}</div>
+		<div class="umb-control-group">
+			<ul class="csspicker__icons">
+				<li class="" ng-repeat="icon in icons|filter: searchTerm">
+					<a href="#" title="{{icon.name}}" class="csspicker__icon {{icon.css}}" ng-click="submitClass(icon)" prevent-default>
+
+					</a>
+					<small>{{icon.name}}</small>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+<div class="umb-panel-footer">
+	<div class="umb-el-wrap umb-panel-buttons">
+		<div class="btn-toolbar umb-btn-toolbar pull-right">
+			<a href ng-click="close()" class="btn btn-link">
+				<localize key="general_cancel">Cancel</localize>
+			</a>
+		</div>
+	</div>
+</div>
+</div>

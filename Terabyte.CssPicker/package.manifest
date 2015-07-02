@@ -1,0 +1,29 @@
+﻿{
+	propertyEditors: [{
+		alias: "Terabyte.CssPicker",
+		name: "Css Picker",
+		isParameterEditor: true,
+		editor: {
+			view: "~/App_Plugins/Terabyte.CssPicker/csspicker.html"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "CSS File",
+					key: "cssFile",
+					view: "textstring"
+				}, {
+					label: "CSS Prefix",
+					key: "cssPrefix",
+					view: "textstring"
+				} 
+			]
+		}
+	}],
+	javascript: [
+		"~/App_Plugins/Terabyte.CssPicker/csspicker.controller.js"
+	],
+	css:[
+		"~/App_Plugins/Terabyte.CssPicker/csspicker.css"
+	]
+}
